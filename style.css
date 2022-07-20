@@ -4,6 +4,10 @@ body {
 
 
 
+.card{
+
+}
+
 
 .left-base {
 	width: auto;
@@ -14,8 +18,9 @@ body {
 
 
 
+
 .base-h {
-	margin-top: 120px;
+	margin-top: 90px;
 	width: 15px;
 	font-size: 55px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -49,7 +54,9 @@ body {
 }
 
 
-
+textarea:focus, input:focus{
+    outline: none;
+}
 
 .base-input {
 	width: 350px;
@@ -69,7 +76,6 @@ body {
 	border-width: 2px;
 	border-style:solid ;
 	position: relative;
-	visibility: hidden;
 }
 
 
@@ -111,10 +117,14 @@ background: linear-gradient(135deg, hsl(0, 77%, 88%), hsl(0, 64%, 84%));
 .right-base {
 	float: right;
 	display: flex;
+	flex-direction: column;
+	
+
 }
 
 .right-base img {
 	height: 100vh;
+	
 }
 
 
@@ -126,4 +136,36 @@ background: linear-gradient(135deg, hsl(0, 77%, 88%), hsl(0, 64%, 84%));
 	margin-left:40px ;
 	margin-top: 10px;
 	display: none;
+}
+.img-mobile{ display: none;}
+
+@media (max-width: 425px){
+
+	.left-base{
+	flex-direction: column-reverse;
+	position: relative;
+	float: left;
+	text-align: center ;
+	margin-left: -0px;
+	margin-top: -0px;
+}
+
+.logo{
+	display: flex;
+	position: absolute;
+	margin-top: -250px;
+	z-index: 1111 !important;
+	
+	
+
+}
+	.img-desktop{
+		display: none;
+	}
+	.img-mobile{
+		display: block;
+		width: 425px !important;
+		height: 200px!important;
+
+	}
 }

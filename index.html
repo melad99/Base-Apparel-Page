@@ -13,7 +13,12 @@
 
 <body onload="document.form1.text1.focus()">
 	<div class="card">
-		<div class="left-base">
+		<div class="right-base colu">
+			<img class="img-desktop" src="img/hero-desktop.jpg" alt="">
+			<img class="img-mobile" src="img/hero-mobile.jpg" alt="">
+
+		</div>
+		<div class="left-base colu">
 			<div class="logo"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" width="158" height="33">
 					<defs>
 						<linearGradient id="a" x1="0%" y1="0%" y2="100%">
@@ -37,7 +42,7 @@
 			</div>
 
 			<form name="form1" class="base-form" action="#">
-				<input id="email" class="base-input base-error" type="text" name="text1" placeholder="Email Address"
+				<input id="email" class="base-input" type="text" name="text1" placeholder="Email Address"
 					aria-hidden="true">
 				<button type="button" onclick="ValidateEmail(document.form1.text1)">
 					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
@@ -47,9 +52,7 @@
 			</form>
 			<div id="valid3" class="valid">Please provide a valid email</div>
 		</div>
-		<div class="right-base">
-			<img src="img/hero-desktop.jpg" alt="">
-		</div>
+	
 	</div>
 
 
